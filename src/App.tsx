@@ -3,6 +3,8 @@ import { Provider } from 'react-redux';
 
 import store from './store/modules/weather/rootReducer';
 
+import Home from './pages/Home';
+
 import GlobalStyle from './styles/global';
 
 const App = () => {
@@ -10,7 +12,7 @@ const App = () => {
     <>
       <Provider store={store}>
         <GlobalStyle />
-        <h1>Weather App</h1>
+        <Home />
       </Provider>
     </>
   );

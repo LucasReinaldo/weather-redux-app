@@ -10,7 +10,7 @@ export const getWeatherAction = (
   return async (dispatch) => {
     try {
       const response = await Axios.get(
-        `https://api.openweathermap.org/data/2.5/weather?id=${city}&appid=${process.env.WEATHER_API_KEY}`,
+        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${process.env.REACT_APP_NOT_SECRET_CODE}`,
       );
 
       if (!response.data) {
